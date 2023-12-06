@@ -1,0 +1,72 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "People who felt fairly or very safe walking alone in their local area after dark by sex",
+    "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "summary": "Percentage estimates for people who felt fairly or very safe walking alone in their local area after dark by sex",
+    "description": "This dataset contains percentage estimates for people who felt fairly or very safe walking alone in their local area after dark for adults aged 16 years and over, broken down by country, English region, age and for each sex from April 2012 to March 2023.",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "keywords": [
+    ],
+    "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "themes": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeinenglandandwalesannualsupplementarytables",
+    "columns": {
+        "refPeriod": {
+            "type": "dimension",
+            "from_template": "government-year"
+        },
+        "refArea": {
+            "label": "Statistical Geography",
+            "type": "dimension",
+            "code_list": "./geography_code_list.json"
+        },
+        "Variable Name": false,
+        "Age": {
+            "label": "Age",
+            "type": "dimension"
+        },
+        "Sex": {
+            "label": "Sex",
+            "type": "dimension"
+        },
+        "Value": {
+            "type": "observations",
+            "data_type": "decimal",
+            "unit": {
+                "label": "percent",
+                "from_existing": "http://qudt.org/vocab/unit/PERCENT"
+            },
+            "measure": {
+                "label": "People who felt fairly or very safe walking alone in their local area after dark",
+                "from_existing": "https://purl.org/csv-cubed/resources/measures#portion-of-population"
+            }
+        },
+        "Lower Confidence Interval (95%)": {
+            "label": "Lower Confidence Interval",
+            "type": "attribute",
+            "data_type": "decimal",
+            "describes_observations": "Value",
+            "required": false
+        },
+        "Upper Confidence Interval (95%)": {
+            "label": "Upper Confidence Interval",
+            "type": "attribute",
+            "data_type": "decimal",
+            "describes_observations": "Value",
+            "required": false
+        },
+        "Sample Size": {
+            "label": "Sample Size",
+            "type": "attribute",
+            "data_type": "integer",
+            "describes_observations": "Value",
+            "required": false
+        },
+        "Unit": false,
+        "Observation Status": {
+            "type": "attribute",
+            "label": "Observation Status",
+            "from_existing": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus",
+            "cell_uri_template": "https://purl.org/csv-cubed/resources/attributes/af-obs-marker#{+observation_status}"
+        }
+    }
+}

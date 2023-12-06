@@ -1,0 +1,1154 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dataset",
+    "tables": [
+        {
+            "url": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "titles": "Unnamed: 0",
+                        "name": "unnamed_0",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/unnamed-0",
+                        "valueUrl": "unnamed-0.csv#{+unnamed_0}",
+                        "required": true
+                    },
+                    {
+                        "titles": "refArea",
+                        "name": "refarea",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/statistical-geography",
+                        "valueUrl": "ons-geography-code-list-for-walking-alone-worksheet-5-6-of-the-uk-measures-of-national-wellbeing-for-november-2023.csv#{+refarea}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Variable Name",
+                        "name": "variable_name",
+                        "suppressOutput": true
+                    },
+                    {
+                        "titles": "refPeriod",
+                        "name": "refperiod",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+refperiod}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Age",
+                        "name": "age",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/age",
+                        "valueUrl": "age.csv#{+age}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Sex",
+                        "name": "sex",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/sex",
+                        "valueUrl": "sex.csv#{+sex}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Value",
+                        "name": "value",
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#measure/people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "datatype": "decimal",
+                        "required": false
+                    },
+                    {
+                        "titles": "Unit",
+                        "name": "unit",
+                        "suppressOutput": true
+                    },
+                    {
+                        "titles": "Sample Size",
+                        "name": "sample_size",
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/sample-size",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Lower Confidence Interval (95%)",
+                        "name": "lower_confidence_interval_95",
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/lower-confidence-interval",
+                        "datatype": "decimal",
+                        "required": false
+                    },
+                    {
+                        "titles": "Upper Confidence Interval (95%)",
+                        "name": "upper_confidence_interval_95",
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/upper-confidence-interval",
+                        "datatype": "decimal",
+                        "required": false
+                    },
+                    {
+                        "titles": "Observation Status",
+                        "name": "observation_status",
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/observation-status",
+                        "valueUrl": "https://purl.org/csv-cubed/resources/attributes/af-obs-marker#{+observation_status}",
+                        "required": false
+                    },
+                    {
+                        "name": "virt_slice",
+                        "virtual": true,
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Slice"
+                    },
+                    {
+                        "name": "virt_slice_structure",
+                        "virtual": true,
+                        "propertyUrl": "qb:sliceStructure",
+                        "valueUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#slice/cross-measures"
+                    },
+                    {
+                        "name": "virt_obs_value",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark"
+                    },
+                    {
+                        "name": "virt_obs_value_meas",
+                        "virtual": true,
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#measure/people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark"
+                    },
+                    {
+                        "name": "virt_obs_value_unit",
+                        "virtual": true,
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#unit/percent"
+                    },
+                    {
+                        "name": "virt_dim_value_unnamed_0",
+                        "virtual": true,
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/unnamed-0",
+                        "valueUrl": "unnamed-0.csv#{+unnamed_0}"
+                    },
+                    {
+                        "name": "virt_dim_value_refarea",
+                        "virtual": true,
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/statistical-geography",
+                        "valueUrl": "ons-geography-code-list-for-walking-alone-worksheet-5-6-of-the-uk-measures-of-national-wellbeing-for-november-2023.csv#{+refarea}"
+                    },
+                    {
+                        "name": "virt_dim_value_refperiod",
+                        "virtual": true,
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+refperiod}"
+                    },
+                    {
+                        "name": "virt_dim_value_age",
+                        "virtual": true,
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/age",
+                        "valueUrl": "age.csv#{+age}"
+                    },
+                    {
+                        "name": "virt_dim_value_sex",
+                        "virtual": true,
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/sex",
+                        "valueUrl": "sex.csv#{+sex}"
+                    },
+                    {
+                        "name": "virt_obs_value_type",
+                        "virtual": true,
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_value",
+                        "virtual": true,
+                        "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#obs/{unnamed_0},{refarea},{refperiod},{age},{sex}@people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dataset"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": "unnamed_0",
+                        "reference": {
+                            "resource": "unnamed-0.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "refarea",
+                        "reference": {
+                            "resource": "ons-geography-code-list-for-walking-alone-worksheet-5-6-of-the-uk-measures-of-national-wellbeing-for-november-2023.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "refperiod",
+                        "reference": {
+                            "resource": "government-year.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "age",
+                        "reference": {
+                            "resource": "age.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "sex",
+                        "reference": {
+                            "resource": "sex.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "unnamed_0",
+                    "refarea",
+                    "refperiod",
+                    "age",
+                    "sex"
+                ],
+                "aboutUrl": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#slice/{unnamed_0},{refarea},{refperiod},{age},{sex}"
+            }
+        },
+        {
+            "url": "unnamed-0.csv",
+            "tableSchema": "unnamed-0.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "ons-geography-code-list-for-walking-alone-worksheet-5-6-of-the-uk-measures-of-national-wellbeing-for-november-2023.csv",
+            "tableSchema": "ons-geography-code-list-for-walking-alone-worksheet-5-6-of-the-uk-measures-of-national-wellbeing-for-november-2023.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "government-year.csv",
+            "tableSchema": "government-year.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "age.csv",
+            "tableSchema": "age.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "sex.csv",
+            "tableSchema": "sex.table.json",
+            "suppressOutput": true
+        }
+    ],
+    "rdfs:seeAlso": [
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/government-year",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "government-year.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Government Year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#class/government-year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#class/sex",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/unnamed-0",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "unnamed-0.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Unnamed: 0"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#class/unnamed-0"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#class/statistical-geography",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/age",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/age"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/age"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 4
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#slice/cross-measures",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#SliceKey",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/statistical-geography"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/unnamed-0"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/sex"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/government-year"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/age"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/observation-status",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 12
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#measure/people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "People who felt fairly or very safe walking alone in their local area after dark"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#portion-of-population"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/lower-confidence-interval",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Lower Confidence Interval"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/sample-size",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Sample Size"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#class/unnamed-0",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#measure/people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#measure/people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 8
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/unnamed-0",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/unnamed-0"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/unnamed-0"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 1
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#class/government-year",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/government-year",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/government-year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/government-year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 3
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/unit",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": true
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 7
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/measure-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 6
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dataset",
+            "@type": [
+                "http://purl.org/linked-data/cube#DataSet",
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#Attachable",
+                "http://www.w3.org/ns/dcat#Dataset"
+            ],
+            "http://purl.org/dc/terms/creator": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/office-for-national-statistics"
+                }
+            ],
+            "http://purl.org/dc/terms/description": [
+                {
+                    "@type": "https://www.w3.org/ns/iana/media-types/text/markdown#Resource",
+                    "@value": "This dataset contains percentage estimates for people who felt fairly or very safe walking alone in their local area after dark for adults aged 16 years and over, broken down by country, English region, age and for each sex from April 2012 to March 2023."
+                }
+            ],
+            "http://purl.org/dc/terms/identifier": [
+                {
+                    "@value": "People who felt fairly or very safe walking alone in their local area after dark by sex"
+                }
+            ],
+            "http://purl.org/dc/terms/issued": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-12-06T10:55:43.249566"
+                }
+            ],
+            "http://purl.org/dc/terms/license": [
+                {
+                    "@id": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                }
+            ],
+            "http://purl.org/dc/terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-12-06T10:55:43.249566"
+                }
+            ],
+            "http://purl.org/dc/terms/publisher": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/office-for-national-statistics"
+                }
+            ],
+            "http://purl.org/dc/terms/title": [
+                {
+                    "@language": "en",
+                    "@value": "People who felt fairly or very safe walking alone in their local area after dark by sex"
+                }
+            ],
+            "http://purl.org/linked-data/cube#structure": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#structure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Percentage estimates for people who felt fairly or very safe walking alone in their local area after dark by sex"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "People who felt fairly or very safe walking alone in their local area after dark by sex"
+                }
+            ],
+            "http://www.w3.org/ns/dcat#theme": [
+                {
+                    "@id": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeinenglandandwalesannualsupplementarytables"
+                }
+            ],
+            "http://www.w3.org/ns/prov#wasGeneratedBy": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#csvcubed-build-activity"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/lower-confidence-interval",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/lower-confidence-interval"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/lower-confidence-interval"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 10
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/statistical-geography",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "ons-geography-code-list-for-walking-alone-worksheet-5-6-of-the-uk-measures-of-national-wellbeing-for-november-2023.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Statistical Geography"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#class/statistical-geography"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/observation-status",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Observation Status"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/sample-size",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/sample-size"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/sample-size"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 9
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/age",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "age.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Age"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#class/age"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/sex",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/sex"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/sex"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#class/age",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#csvcubed-build-activity",
+            "@type": [
+                "http://www.w3.org/ns/prov#Activity",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.4.7"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/upper-confidence-interval",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/upper-confidence-interval"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/upper-confidence-interval"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 11
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#structure",
+            "@type": [
+                "http://purl.org/linked-data/cube#DataStructureDefinition",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#component": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/unnamed-0"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/unit"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/upper-confidence-interval"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/government-year"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/statistical-geography"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/observation-status"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/age"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/lower-confidence-interval"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/sex"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/measure-type"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/sample-size"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/sample-size"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#measure/people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/upper-confidence-interval"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/government-year"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/observation-status"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/unnamed-0"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/statistical-geography"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/age"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/lower-confidence-interval"
+                },
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/sex"
+                }
+            ],
+            "http://purl.org/linked-data/cube#sliceKey": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#slice/cross-measures"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#component/statistical-geography",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/statistical-geography"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/statistical-geography"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#attribute/upper-confidence-interval",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Upper Confidence Interval"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dimension/sex",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "sex.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Sex"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#class/sex"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dependency/unnamed-0",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./unnamed-0.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "unnamed-0.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dependency/ons-geography-code-list-for-walking-alone-worksheet-5-6-of-the-uk-measures-of-national-wellbeing-for-november-2023",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./ons-geography-code-list-for-walking-alone-worksheet-5-6-of-the-uk-measures-of-national-wellbeing-for-november-2023.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "ons-geography-code-list-for-walking-alone-worksheet-5-6-of-the-uk-measures-of-national-wellbeing-for-november-2023.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dependency/government-year",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./government-year.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "government-year.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dependency/age",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./age.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "age.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#dependency/sex",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./sex.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "sex.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "people-who-felt-fairly-or-very-safe-walking-alone-in-their-local-area-after-dark-by-sex.csv#unit/percent",
+            "@type": [
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "percent"
+                }
+            ]
+        }
+    ]
+}
