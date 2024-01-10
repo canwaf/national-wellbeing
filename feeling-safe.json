@@ -15,8 +15,9 @@
             "tableSchema": {
                 "columns": [
                     {
-                        "title": "Time Period",
-                        "name": "time_period"
+                        "title": "Government Year",
+                        "name": "time_period",
+                        "valueUrl": "http://reference.data.gov.uk/id/government-year/{time_period}"
                     },
                     {
                         "title": "Area Code",
