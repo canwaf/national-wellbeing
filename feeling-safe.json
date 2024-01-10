@@ -16,11 +16,13 @@
                 "columns": [
                     {
                         "title": "Time Period Type",
-                        "name": "time_period_type"
+                        "name": "time_period_type",
+                        "suppressOutput": true
                     },
                     {
                         "title": "Time Period",
-                        "name": "time_period"
+                        "name": "time_period",
+                        "suppressOutput": true
                     },
                     {
                         "virtual": true,
@@ -37,7 +39,8 @@
                     },
                     {
                         "title": "Area Label",
-                        "name": "area_label"
+                        "name": "area_label",
+                        "suppressOutput": true
                     },
                     {
                         "title": "Age Code",
@@ -46,7 +49,8 @@
                     },
                     {
                         "title": "age_label",
-                        "name": "Age Label"
+                        "name": "Age Label",
+                        "suppressOutput": true
                     },
                     {
                         "title": "Sex Code",
@@ -55,7 +59,8 @@
                     },
                     {
                         "title": "Sex Label",
-                        "name": "sex_label"
+                        "name": "sex_label",
+                        "suppressOutput": true
                     },
                     {
                         "title": "observation",
