@@ -1,4 +1,4 @@
-time_period,area_code,area_label,age_code,age_label,,sex,observation,measure,unit,sample_size,lcl_95,ucl_95,af_obs_status
+time_period,area_code,area_label,age_code,age_label,sex_code,sex_label,observation,measure,unit,sample_size,lcl_95,ucl_95,af_obs_status
 2012-04-01/P1Y,K04000001,England and Wales,Y_GE16,Aged 16 years and over,F,Female,56.7,people who felt fairly or very safe walking alone in their local area after dark,PERCENT,4330,54.9,58.5,
 2012-04-01/P1Y,K04000001,England and Wales,Y_GE16,Aged 16 years and over,M,Male,84.7,people who felt fairly or very safe walking alone in their local area after dark,PERCENT,3690,83.3,86.1,
 2013-04-01/P1Y,K04000001,England and Wales,Y_GE16,Aged 16 years and over,F,Female,58,people who felt fairly or very safe walking alone in their local area after dark,PERCENT,4500,56.2,59.7,
