@@ -69,7 +69,8 @@
                     },
                     {
                         "title": "measure",
-                        "name": "measure"
+                        "name": "measure",
+                        "description": "Data is based on respondents' answer to a survey question on experience of crime in the full 12 months prior to the interview (i.e. a moving reference period)."
                     },
                     {
                         "title": "unit",
@@ -153,7 +154,8 @@
                     },
                     {
                         "title": "measure",
-                        "name": "measure"
+                        "name": "measure",
+                        "description": "Data is based on respondents' answer to a survey question on experience of crime in the full 12 months prior to the interview (i.e. a moving reference period)."
                     },
                     {
                         "title": "unit",
