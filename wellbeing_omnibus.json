@@ -1,9 +1,9 @@
 {
     "@language": "en",
     "@import": "http://www.w3.org/2013/json-ld-context/rdfa11",
-    "title": "People who felt fairly or very safe walking alone in their local area after dark by sex",
+    "title": "UK Measures of National Well-being",
     "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
-    "summary": "Percentage estimates for people who felt fairly or very safe walking alone in their local area after dark by sex",
+    "summary": "Various measures of national well-being, including crime, and personal safety.",
     "description": "This dataset contains percentage estimates for people who felt fairly or very safe walking alone in their local area after dark for adults aged 16 years and over, broken down by country, English region, age and for each sex from April 2012 to March 2023.",
     "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "keywords": [],
@@ -88,8 +88,92 @@
                         "name": "ucl_95"
                     },
                     {
-                        "title": "af_obs_status",
-                        "name": "af_obs_status"
+                        "title": "obs_status",
+                        "name": "obs_status"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "crime.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "title": "Time Period Type",
+                        "name": "time_period_type",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Time Period",
+                        "name": "time_period",
+                        "suppressOutput": true
+                    },
+                    {
+                        "virtual": true,
+                        "title": "Time Period",
+                        "name": "time_period",
+                        "valueUrl": "http://reference.data.gov.uk/id/{time_period_type}/{time_period}"
+                    },
+                    {
+                        "title": "Area Code",
+                        "description": "ONS code for area",
+                        "name": "area_code",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{area_code}",
+                        "propertyUrl": "schema:url"
+                    },
+                    {
+                        "title": "Area Label",
+                        "name": "area_label",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Age Code",
+                        "description": "SDMX code for age",
+                        "name": "age_code"
+                    },
+                    {
+                        "title": "age_label",
+                        "name": "Age Label",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Sex Code",
+                        "description": "SDMX code for sex",
+                        "name": "sex_code"
+                    },
+                    {
+                        "title": "Sex Label",
+                        "name": "sex_label",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "observation",
+                        "name": "observation",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "title": "measure",
+                        "name": "measure"
+                    },
+                    {
+                        "title": "unit",
+                        "name": "unit"
+                    },
+                    {
+                        "title": "sample_size",
+                        "name": "sample_size"
+                    },
+                    {
+                        "title": "Lower Confidence Limit 95%",
+                        "name": "lcl_95"
+                    },
+                    {
+                        "title": "Upper Confidence Limit 95%",
+                        "name": "ucl_95"
+                    },
+                    {
+                        "title": "obs_status",
+                        "name": "obs_status"
                     }
                 ]
             }
