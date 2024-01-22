@@ -1,6 +1,6 @@
 {
     "@language": "en",
-    "@import": "http://www.w3.org/2013/json-ld-context/rdfa11",
+    "@context": "./draft_ons_context.json",
     "title": "UK Measures of National Well-being",
     "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
     "summary": "Various measures of national well-being, including crime, and personal safety.",
@@ -15,20 +15,25 @@
             "tableSchema": {
                 "columns": [
                     {
-                        "title": "Time Period Type",
-                        "name": "time_period_type",
+                        "title": "Period Type",
+                        "name": "period_type",
                         "suppressOutput": true
                     },
                     {
-                        "title": "Time Period",
-                        "name": "time_period",
+                        "title": "Period Code",
+                        "name": "period_notation",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Period Label",
+                        "name": "Period Pabel",
                         "suppressOutput": true
                     },
                     {
                         "virtual": true,
-                        "title": "Time Period",
-                        "name": "time_period",
-                        "valueUrl": "http://reference.data.gov.uk/id/{time_period_type}/{time_period}"
+                        "title": "Period",
+                        "name": "period",
+                        "valueUrl": "http://reference.data.gov.uk/id/{period_type}/{period_notation}"
                     },
                     {
                         "title": "Area Code",
@@ -100,20 +105,25 @@
             "tableSchema": {
                 "columns": [
                     {
-                        "title": "Time Period Type",
-                        "name": "time_period_type",
+                        "title": "Period Type",
+                        "name": "period_type",
                         "suppressOutput": true
                     },
                     {
-                        "title": "Time Period",
-                        "name": "time_period",
+                        "title": "Period Code",
+                        "name": "period_notation",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Period Label",
+                        "name": "Period Pabel",
                         "suppressOutput": true
                     },
                     {
                         "virtual": true,
-                        "title": "Time Period",
-                        "name": "time_period",
-                        "valueUrl": "http://reference.data.gov.uk/id/{time_period_type}/{time_period}"
+                        "title": "Period",
+                        "name": "period",
+                        "valueUrl": "http://reference.data.gov.uk/id/{period_type}/{period_notation}"
                     },
                     {
                         "title": "Area Code",
