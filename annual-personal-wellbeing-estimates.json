@@ -1,0 +1,180 @@
+{
+    "@context": "",
+    "@id": "https://data.ons.gov.uk/datasets/anxiety",
+    "@type": "dcat:DataSeries",
+    "identifier": "anxiety",
+    "title": "Anxiety",
+    "summary": "",
+    "description": "This dataset....",
+    "issued": "2023-05-17",
+    "next_release": " ",
+    "publisher": "office-for-national-statistics",
+    "crerator": "office-for-national-statistics",
+    "contact_point": {
+        "name": "",
+        "email": ""
+    },
+    "theme": [
+        "family-ess"
+    ],
+    "frequency": "",
+    "keywords": [
+        "personal-wellbeing",
+        "subnational",
+        "local-authorities",
+        "quality-of-life",
+        "regions",
+        "annual-population-survey",
+        "counties",
+        "anxiety"
+    ],
+    "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "tables": [
+        {
+            "url": "anxiety.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "title": "Period Type",
+                        "name": "period_type",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Period Code",
+                        "name": "period_notation",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Period Label",
+                        "name": "period_label",
+                        "suppressOutput": true
+                    },
+                    {
+                        "virtual": true,
+                        "title": "Period",
+                        "name": "period",
+                        "valueurl": "http://reference.data.gov.uk/id/{period_type}/{period_notation}"
+                    },
+                    {
+                        "title": "Area Code",
+                        "description": "ONS code for area",
+                        "name": "area_code",
+                        "valueurl": "http://statistical.data.gov.uk/id/statistical-geography/{area_code}",
+                        "propertyuri": "schema:url"
+                    },
+                    {
+                        "title": "Area label",
+                        "name": "area_label",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Area type",
+                        "name": "area_type",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Observation",
+                        "name": "observation",
+                        "datatype": "decimal",
+                        "label": "Score"
+                    },
+                    {
+                        "title": "Measure",
+                        "name": "measure"
+                    },
+                    {
+                        "title": "Unit",
+                        "name": "unit"
+                    },
+                    {
+                        "title": "Lower Confidence Limit (95%)",
+                        "name": "lcl_95",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "title": "Upper Confidence Limit (95%)",
+                        "name": "ucl_95",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "title": "Observation Status",
+                        "name": "obs_status"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "positive.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "title": "Period Type",
+                        "name": "period_type",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Period Code",
+                        "name": "period_notation",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Period Label",
+                        "name": "period_label",
+                        "suppressOutput": true
+                    },
+                    {
+                        "virtual": true,
+                        "title": "Period",
+                        "name": "period",
+                        "valueurl": "http://reference.data.gov.uk/id/{period_type}/{period_notation}"
+                    },
+                    {
+                        "title": "Area Code",
+                        "description": "ONS code for area",
+                        "name": "area_code",
+                        "valueurl": "http://statistical.data.gov.uk/id/statistical-geography/{area_code}",
+                        "propertyuri": "schema:url"
+                    },
+                    {
+                        "title": "Area label",
+                        "name": "area_label",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Area type",
+                        "name": "area_type",
+                        "suppressOutput": true
+                    },
+                    {
+                        "title": "Observation",
+                        "name": "observation",
+                        "datatype": "decimal",
+                        "label": "Score"
+                    },
+                    {
+                        "title": "Measure",
+                        "name": "measure"
+                    },
+                    {
+                        "title": "Unit",
+                        "name": "unit"
+                    },
+                    {
+                        "title": "Lower Confidence Limit (95%)",
+                        "name": "lcl_95",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "title": "Upper Confidence Limit (95%)",
+                        "name": "ucl_95",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "title": "Observation Status",
+                        "name": "obs_status"
+                    }
+                ]
+            }
+        }
+    ]
+}
